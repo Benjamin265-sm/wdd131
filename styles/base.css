@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+ #course-title {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 800px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a4d8f;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
+}
+
+
+
+/* styling  the navigation*/
+nav {
+    background-color: #555;
+    margin: 0  auto;
+    max-width: 800px;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #444;
+    text-decoration: overline;
+}
+
+@media screen and (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+    
+    nav ul li {
+        flex: 1 1 100%
+    }
+
+}
+/* styling  the navigation*/
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+    .about {
+        grid-column: 1 / 2;
+    }
+}
+
+.about img {
+    float: right;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+.card {
+    background: #dfdfdf;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 2rem 1rem;
+    margin: 0;
+    
+    display: block;
+    max-width: 100%;
+}
+.card h2 {
+    background: #0077b6;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 8px 8px 0 0;
+    margin: -2rem -2rem 1rem -2rem;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    gap: 0.5rem;
+}
+
+
+
+footer {
+
+  display: block;
+    text-align: center;
+    margin: 1rem auto;
+    max-width: 800px;
+    
+    
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 1rem;
+    background-color: #555;
+
+
+}
+
