@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Malawi Explorer – Contact</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <header>
+    <h1>Malawi Explorer</h1>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="destinations.html">Destinations</a>  
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="contact-main">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Subject: <input type="text" name="subject"></label><br>
+      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br>
+      <button type="submit">Send</button>
+    </form>
+    <div id="formMsg"></div>
+  </main>
+  
+      <footer>
+        <p>&copy;<span id="currentyear"></span> 🤐 Benjamin Mbaisa 🤐 Malawi</p>
+        <p id="lastModified"></p>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault();
+      document.getElementById('formMsg').textContent = 'Thank you—your message has been sent!';
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>
